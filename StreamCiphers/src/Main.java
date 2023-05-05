@@ -63,6 +63,9 @@ public class Main {
 //        System.out.println(ct+"  "+pt);
 
         /*----------------------------------------------------------Hill Cipher-------------------------------------------------------*/
+//        Hill hill = new Hill("rrfvsvcct","paymoremoney");
+//        System.out.println(hill.Encrypt("paymoremoney"));
+//        System.out.println(hill.Decrypt("rrlmwbkaspdh"));
     }
 
 
