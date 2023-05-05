@@ -10,7 +10,6 @@ public class Main {
 //        System.out.println(ct);
 //        System.out.println(pt);
 
-
         /*----------------------------------------------------------Monoalphabetic Cipher-------------------------------------------------*/
 
 //        Monoalphabetic monoalphabetic = new Monoalphabetic();
@@ -38,6 +37,7 @@ public class Main {
 //        System.out.println(pt);
 
         /*----------------------------------------------------------Autokey Cipher-------------------------------------------------------*/
+
 //        Autokey autokey = new Autokey("wearediscoveredsaveyourself","deceptive");
 //        autokey.keyGenerator("deceptive");
 //        String ct = autokey.Encrypt("wearediscoveredsaveyourself");
@@ -46,11 +46,23 @@ public class Main {
 //        System.out.println(pt);
 
         /*----------------------------------------------------------Vernam Cipher-------------------------------------------------------*/
-//        Vernam vernam = new Vernam("there", "kalmo");
-//        System.out.println(vernam.Encrypt("there"));
-//        System.out.println(vernam.Decrypt("zhpdk"));
-//        there is a problem with r in encryption
 
+//        Vernam vernam = new Vernam("Manar", "MONEY");
+//        String ct = vernam.Encrypt("Manar");
+//        String pt = vernam.Decrypt(ct);
+//        System.out.println(ct);
+//        System.out.println(pt);
+
+        /*----------------------------------------------------------One-Time Pad-------------------------------------------------------*/
+
+//        One_TimePad oneTimePad = new One_TimePad();
+//        String txt = "Manar";
+//        String key = oneTimePad.RanadomKeyGenerator(txt.length());
+//        String ct = oneTimePad.Encrypt(txt,key);
+//        String pt = oneTimePad.Decrypt(ct,key);
+//        System.out.println(ct+"  "+pt);
+
+        /*----------------------------------------------------------Hill Cipher-------------------------------------------------------*/
     }
 
 

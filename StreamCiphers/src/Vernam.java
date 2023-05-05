@@ -15,11 +15,12 @@ public class Vernam {
 
     public String Encrypt(String pt) {
         pt = pt.toLowerCase();
+        key = key.toLowerCase();
         String ct ="";
         for (int i = 0; i < pt.length(); i++) {
             int v1 = (pt.charAt(i) - 'a');
             int v2 = (key.charAt(i) - 'a');
-            int val = (v1 ^ v2)%26;
+            int val = (v1 + v2)%26;
             char val2 = alphabet.charAt(val);
             ct += val2;
         }
@@ -32,7 +33,10 @@ public class Vernam {
         for (int i = 0; i < ct.length(); i++) {
             int v1 = (ct.charAt(i) - 'a');
             int v2 = (key.charAt(i) - 'a');
-            int val = (v1 ^ v2);
+            int val = (v1 - v2);
+            if (val<0){
+                val+=26;
+            }
             char val2 = alphabet.charAt(val);
             pt += val2;
         }
