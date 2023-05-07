@@ -1,8 +1,11 @@
+import TranspositionCiphers.RailFence;
+import TranspositionCiphers.RowTransposition;
+
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
-        /*----------------------------------------------------------Caesar Cipher---------------------------------------------------------*/
+    public static void main(String[] args) throws Exception {
+        /*----------------------------------------------------------Caesar Cipher-------------------------------------------------------*/
 
 //        Caesar caesar = new Caesar();
 //        String ct = caesar.Encrypt("Manar",4).toString();
@@ -10,7 +13,7 @@ public class Main {
 //        System.out.println(ct);
 //        System.out.println(pt);
 
-        /*----------------------------------------------------------Monoalphabetic Cipher-------------------------------------------------*/
+        /*----------------------------------------------------------Monoalphabetic Cipher-----------------------------------------------*/
 
 //        Monoalphabetic monoalphabetic = new Monoalphabetic();
 //        String ct = monoalphabetic.Encryption("Manar", "DKVQFIBJWPESCXHTMYAUOLRGZN").toString();
@@ -18,7 +21,7 @@ public class Main {
 //        System.out.println(ct);
 //        System.out.println(pt);
 
-        /*----------------------------------------------------------Playfair Cipher-------------------------------------------------------*/
+        /*----------------------------------------------------------Playfair Cipher-----------------------------------------------------*/
 
 //        Playfair playfair = new Playfair("Problem", "Hello");
 //        playfair.clearPKey();
@@ -27,7 +30,7 @@ public class Main {
 //        String pt = playfair.finalDecText();
 //        System.out.println(ct+"   "+pt);
 
-        /*----------------------------------------------------------Vigenère Cipher-------------------------------------------------------*/
+        /*----------------------------------------------------------Vigenère Cipher-----------------------------------------------------*/
 
 //        Vigenère vigenère = new Vigenère("wearediscoveredsaveyourself","deceptive");
 //        vigenère.keyGenerator("deceptive");
@@ -62,10 +65,23 @@ public class Main {
 //        String pt = oneTimePad.Decrypt(ct,key);
 //        System.out.println(ct+"  "+pt);
 
-        /*----------------------------------------------------------Hill Cipher-------------------------------------------------------*/
+        /*----------------------------------------------------------Hill Cipher--------------------------------------------------------*/
 //        Hill hill = new Hill("rrfvsvcct","paymoremoney");
 //        System.out.println(hill.Encrypt("paymoremoney"));
 //        System.out.println(hill.Decrypt("rrlmwbkaspdh"));
+
+        /*-------------------------------------------------------Rail Fence cipher-------------------------------------------------------*/
+
+//        RailFence railFence = new RailFence("meetmeafterthetogaparty",2);
+//        System.out.println(railFence.Encrypt("meetmeafterthetogaparty"));
+//        System.out.println(railFence.Decrypt("mematrhtgpretefeteoaat"));
+
+        /*-------------------------------------------------------Row Transposition Ciphers-----------------------------------------------*/
+//        RowTransposition rowTransposition = new RowTransposition("attackpostponeduntiltwoamxyz", "4312567");
+//        rowTransposition.convertptTOmatrix();
+//        System.out.println(rowTransposition.Encrypt("attackpostponeduntiltwoamxyz"));
+//        rowTransposition.convertctTOmatrix("ttnaaptmtsuoaodwcoixknlypetz");
+//        System.out.println(rowTransposition.Decrypt("ttnaaptmtsuoaodwcoixknlypetz"));
     }
 
 
